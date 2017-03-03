@@ -4,6 +4,6 @@ using namespace std;
 
 int main()
  {
- cout << "\n\t>> ASAROVA <<"; BR;
+ cout << "\n\n\t>> ASAROVA <<"; BR;
  return 0;
  }
