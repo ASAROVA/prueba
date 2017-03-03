@@ -1,0 +1,5 @@
+g++ -o programa.exe programa.cpp
+g++ -o programa programa.cpp
+
+programa
+

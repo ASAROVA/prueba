@@ -1,0 +1,13 @@
+git version
+
+git config --global user.name "Tu nombre aquí"
+git config --global user.email "tu_email_aquí@example.com"
+
+git init
+git status
+git add nombre_archivo.ext
+git commit -m "comentario sobre este commit"
+git checkout nombre_fichero.ext
+
+git remote add origin https://github.com/ASAROVA/prueba.git
+git push -u origin master

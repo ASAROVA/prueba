@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main()
+
+ {
+ char a = 100, b = 128;
+ cout << a << endl << b << endl;
+ cout << a+b << endl;
+ cout << a-b << endl;
+ //cout << () << endl;
+ return 0;
+ }
