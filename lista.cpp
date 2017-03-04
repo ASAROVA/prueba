@@ -2,12 +2,15 @@
 
 using namespace std;
 
+template <class T> class lista;
+
 template <class T>
 class nodo
  {
- public:
+ //public:
+ protected:
   T dato;
-  nodo<T> *sgte;
+  nodo<T>*sgte;
  public:
   /*
   nodo (T d, nodo<T>*sig)
@@ -19,7 +22,9 @@ class nodo
   nodo (T d = T(), nodo<T>*sig = NULL): dato(d), sgte(sig){};
   void imprimir()
    {cout<<dato<<",["<<this<<"],"<<sgte<<endl;}
- //friend class lista;
+
+ friend class lista<T>;
+
  };
 
 template <class T>
@@ -29,7 +34,7 @@ class lista
   nodo<T> *cabeza;
   nodo<T> *cola;
  public:
-  lista() {cabeza=nullptr; cola=nullptr;}
+  lista() {cabeza=NULL; cola=NULL;}
   void agregar(T d)
    {
    nodo<T> *nuevo = new nodo<T>(d);
@@ -47,6 +52,7 @@ class lista
    cout<<"FIN"<<endl;
    }
 
+  /*
   void maxrec(nodo<T>*maxi=cabeza)
    {
 
@@ -62,6 +68,9 @@ class lista
 
  int main()
   {
+
+  cout << "\n\n\t>>ASAROVA<<\n\n";
+
   nodo<int> *n1 = new nodo<int>();
   n1->imprimir();
   nodo<int> *n2 = new nodo<int>(10);

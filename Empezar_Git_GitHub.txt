@@ -7,7 +7,18 @@ git init
 git status
 git add nombre_archivo.ext
 git commit -m "comentario sobre este commit"
-git checkout nombre_fichero.ext
+git checkout nombre_fichero.ext 	//resetar fichero a su ultimo estado guardado
+git rm archivo_a_borrar
 
 git remote add origin https://github.com/ASAROVA/prueba.git
 git push -u origin master
+
+git log --oneline
+
+git branch 	// información de ramas
+git branch nueva_rama_a_crear
+git checkout rama_a_la_cual_cambiar
+git checkout -b nueva_rama_a_crear_y_cambiar
+git branch -d rama_a_borrar
+
+git merge rama_a_fusionar_con_la_actual
